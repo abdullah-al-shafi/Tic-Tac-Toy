@@ -102,6 +102,22 @@ class MainActivity : AppCompatActivity() {
             winner = 2
         }
 
+        //cross connection 1
+        if (Player1.contains(1) && Player1.contains(5) && Player1.contains(9)){
+            winner = 1
+        }
+        if (Player2.contains(1) && Player2.contains(5) && Player2.contains(9)){
+            winner = 2
+        }
+        //cross connection 2
+        if (Player1.contains(3) && Player1.contains(5) && Player1.contains(7)){
+            winner = 1
+        }
+        if (Player2.contains(3) && Player2.contains(5) && Player2.contains(7)){
+            winner = 2
+        }
+
+
         if (winner != -1 ){
             if (winner==1){
                 Toast.makeText(this,"Player1 is win the game",Toast.LENGTH_LONG).show()
